@@ -1,6 +1,5 @@
 import reactLogo from '/react.svg';
 import millionLogo from '/million.svg';
-import useStore from './hooks/useStore';
 import createStore from './hooks/useStore/createStore';
 import Button from './Button';
 import ResetButton from './ResetButton';
