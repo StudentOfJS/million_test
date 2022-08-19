@@ -6,6 +6,7 @@ export default function useStore<T>(
 ): [T, (newData: T | ((oldData: T) => T)) => void] {
   const _getStoreData = () => {
     let dataString = window[storeType].getItem(storeKey);
+    console.log(dataString);
     let localData = dataString && JSON.parse(dataString);
     return localData;
   };
