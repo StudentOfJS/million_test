@@ -1,11 +1,13 @@
 import reactLogo from '/react.svg';
 import millionLogo from '/million.svg';
+import useStore from './hooks/useStore';
 import createStore from './hooks/useStore/createStore';
 import Button from './Button';
 import ResetButton from './ResetButton';
 import './App.css';
 createStore({ data: 0, storeKey: 'count' });
 function App() {
+  const [state] = useStore('count');
   return (
     <div className="App">
       <div>
