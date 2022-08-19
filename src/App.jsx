@@ -7,7 +7,6 @@ import ResetButton from './ResetButton';
 import './App.css';
 createStore({ data: 0, storeKey: 'count' });
 function App() {
-  const [state, setState] = useStore('count');
   return (
     <div className="App">
       <div>
@@ -27,16 +26,6 @@ function App() {
       </div>
       <p className="read-the-docs">
         Click on the Million and React logos to learn more
-      </p>
-      <p>
-        <button
-          className="reset"
-          onClick={() => {
-            setState(0);
-          }}
-        >
-          Reset
-        </button>
       </p>
     </div>
   );
